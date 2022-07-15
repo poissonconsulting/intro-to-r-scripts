@@ -4,12 +4,12 @@ typeof("Hello User 1423")
 #replace with your name
 x <- "Ayla's" 
 
-## cat("That is", x, "computer")
+cat("That is", x, "computer")
 
 1 < 2
 typeof(1 < 2)
 
-## 2 < 1
+2 < 1
 
 typeof(1.2)
 
@@ -21,10 +21,10 @@ typeof(1L)
 x <- c(1, NA_real_, 3, 4, 5, 6)
 print(x)
 
-## # What which NA value would you use in this case `c(1L, NA_?, 3L)`?
-## c(1L, NA_, 3L)
+# What which NA value would you use in this case `c(1L, NA_?, 3L)`?
+c(1L, NA_, 3L)
 
-## NULL
+NULL
 
 # create a sequence of numbers from 1 to 20
 x <- seq(from = 1, to = 20, by = 1)

@@ -11,11 +11,11 @@ print(x)
 # How many decimal places does R display?
 2.333333334353463984821113
 
-## sitka_counts <- data.frame(
-##   year = c(2020, 2021, 2022),
-##   female = c(30, 47, 61),
-##   male = c(40, 51, 42)
-## )
+sitka_counts <- data.frame(
+  year = c(2020, 2021, 2022),
+  female = c(30, 47, 61),
+  male = c(40, 51, 42)
+)
 
 # Addition
 2 + 3

@@ -105,17 +105,17 @@ sitka_counts[,1]
 # What value will `sitka_counts[2, 3]` return?
 sitka_counts[2, 3]
 
-## tbl1 <-
-##   data.frame(
-##     species = c("spruce", "cedar", "cedar"),
-##     DBH = c(500, NA_real_, 400)
-##   )
-## 
-## tbl2 <-
-##   data.frame(
-##     species = c("spruce", "cedar", "cedar"),
-##     DBH = c(500, 400)
-##   )
+tbl1 <-
+  data.frame(
+    species = c("spruce", "cedar", "cedar"),
+    DBH = c(500, NA_real_, 400)
+  )
+
+tbl2 <-
+  data.frame(
+    species = c("spruce", "cedar", "cedar"),
+    DBH = c(500, 400)
+  )
 
 # create a vector of categorical values
 hg_mammal <- c("pacific martin", "ermine", "black bear", "ermine")

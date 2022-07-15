@@ -52,12 +52,12 @@ linear_mod <-
     data = data
   )
 
-## # alternative way to write the model
-## linear_mod <-
-##   lm(
-##     "log(Weight_kg) ~ log(ForkLength_mm)",
-##     data = data
-##   )
+# alternative way to write the model
+linear_mod <-
+  lm(
+    "log(Weight_kg) ~ log(ForkLength_mm)",
+    data = data
+  )
 
 summary(linear_mod)
 

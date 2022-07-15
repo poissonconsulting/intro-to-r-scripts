@@ -12,19 +12,19 @@ add_vectors(
   x = c(2, 4)
 )
 
-## add_vectors(
-##   y = c(2, 4)
-## )
+add_vectors(
+  y = c(2, 4)
+)
 
-## add_vectors(
-##   x = c(4, 5),
-##   y = c(3, 6)
-## )
+add_vectors(
+  x = c(4, 5),
+  y = c(3, 6)
+)
 
-## install.packages("readxl")
+install.packages("readxl")
 
-## library(readxl)
+library(readxl)
 
 
-## x <- seq(1, 10)
-## x <- seq(20, 30)
+x <- seq(1, 10)
+x <- seq(20, 30)
