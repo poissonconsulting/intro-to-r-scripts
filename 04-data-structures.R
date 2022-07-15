@@ -21,7 +21,7 @@ x <- c(3L, 0L, 4L, 2L, 5L, 200L)
 # access the 2nd value in the vector
 x[2]
 
-knitr::include_graphics("images/data-structures-index-position.png")
+
 
 # How would you access the `4L` value in `x`?
 
@@ -48,16 +48,12 @@ vec_a + vec_b
 vec_c <- c(1, 4)
 vec_a + vec_c
 
-knitr::include_graphics("images/data-structures-recycling.png")
-
 tree_measurements <- 
   list(
     species = c("spruce", "cedar", "cedar"),
     DBH = c(500, 400)
   )
 tree_measurements
-
-knitr::include_graphics("images/data-structures-list-index.png")
 
 # b)
 tree_measurements[1]

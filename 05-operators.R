@@ -4,8 +4,6 @@ c("this will not save")
 # x is saved under Values
 x <- c("this will save")
 
-knitr::include_graphics("images/operators-environment.png")
-
 print(x)
 x <- c("Now it has been overwritten")
 print(x)
@@ -42,7 +40,6 @@ print(x)
 # Integer Division (quotient)
 1 %/% 3
 
-knitr::include_graphics("images/modulus-division.png")
 
 (1 + 3) * 2^4 
 

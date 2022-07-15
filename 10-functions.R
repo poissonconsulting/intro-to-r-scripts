@@ -1,4 +1,4 @@
-knitr::include_graphics("images/functions-basics.png")
+
 
 add_vectors <- function(x, y = c(2, 3)) {
   z <- x + y
@@ -25,7 +25,6 @@ add_vectors(
 
 ## library(readxl)
 
-knitr::include_graphics("images/functions-environment.png")
 
 ## x <- seq(1, 10)
 ## x <- seq(20, 30)

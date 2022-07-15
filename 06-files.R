@@ -1,10 +1,6 @@
-knitr::include_graphics("images/file-paths.png")
+
 
 getwd()
-
-knitr::include_graphics("images/set-working-directory.png")
-
-knitr::include_graphics("images/files-rproject.png")
 
 data <- 
   read.csv(
