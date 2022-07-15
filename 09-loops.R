@@ -20,16 +20,20 @@ x <- list(
   group = c(10, 20)
 )
 
+# access the value in the list based on the position
 for (i in 1:length(x)) {
+  print(i)
   print(x$id[i])
   print(x$group[i] + 2)
 }
 
-
+## # Are both option A and B valid ways of writing a for loop?
+## 
 ## # Option A
 ## for (fruit in berries) {
 ##   print(fruit)
 ## }
+## 
 ## # Option B
 ## for (item in berries) {
 ##   print(item)

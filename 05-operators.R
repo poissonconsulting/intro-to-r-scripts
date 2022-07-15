@@ -1,7 +1,7 @@
 # this will print to screen but no object will be saved in the Environment
 c("this will not save") 
 
-# a Value called x is saved
+# x is saved under Values
 x <- c("this will save")
 
 knitr::include_graphics("images/operators-environment.png")
@@ -10,14 +10,14 @@ print(x)
 x <- c("Now it has been overwritten")
 print(x)
 
+# How many decimal places does R display?
+2.333333334353463984821113
+
 ## sitka_counts <- data.frame(
 ##   year = c(2020, 2021, 2022),
 ##   female = c(30, 47, 61),
 ##   male = c(40, 51, 42)
 ## )
-
-# How many decimal places does R display?
-2.333333334353463984821113
 
 # Addition
 2 + 3
@@ -46,7 +46,7 @@ knitr::include_graphics("images/modulus-division.png")
 
 (1 + 3) * 2^4 
 
-#What would `1 + 3 * 2^4` evaluate to?
+#What does `1 + 3 * 2^4` evaluate to?
 1 + 3 * 2^4
 
 # Less than
@@ -72,18 +72,22 @@ knitr::include_graphics("images/modulus-division.png")
 # Value match in set
 2 %in% c(2, 3, 4)
 
+# What do you get when you run `2 %in% c(3, 4)`?
+2 %in% c(3, 4)
+
 # Not 
 !c(TRUE, FALSE, FALSE)
 
 # And
-4 > 3 && 1 < 5
 # is 4 greater then 3 AND is 1 less then 5?
+4 > 3 && 1 < 5
 
-# And (element wise)
-c(TRUE, TRUE, FALSE) & c(FALSE, TRUE, TRUE)
-
-# Or (element wise)
-TRUE | c(FALSE, TRUE)
+# And (vectorized/element wise)
+c(TRUE, TRUE, FALSE) & c(FALSE, TRUE, FALSE)
 
 # Or 
-TRUE || TRUE
+# is 1 greater then 2 OR is 4 greater then 8?
+1 > 2 || 4 > 8
+
+# Or (vectorized/element wise)
+c(TRUE, TRUE) | c(FALSE, TRUE)
