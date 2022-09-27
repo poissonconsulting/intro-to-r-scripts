@@ -16,6 +16,7 @@
 *.tex
 *.html
 *.zip
+*.RDS
 
 ~*.xlsx
 ~*.doc
