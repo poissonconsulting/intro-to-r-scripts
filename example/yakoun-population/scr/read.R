@@ -11,7 +11,7 @@ saveRDS(
 
 ## Capture ----
 
-capture <- read.csv("example/yakoun-population/data/captures.csv")
+capture <- read.csv("example/yakoun-population/data/capture.csv")
 
 saveRDS(
   visit,
