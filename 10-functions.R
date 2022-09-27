@@ -1,5 +1,4 @@
 
-
 add_vectors <- function(x, y = c(2, 3)) {
   z <- x + y
   z
@@ -13,12 +12,12 @@ add_vectors(
 )
 
 add_vectors(
-  y = c(2, 4)
+ y = c(2, 4)
 )
 
 add_vectors(
-  x = c(4, 5),
-  y = c(3, 6)
+ x = c(4, 5),
+ y = c(3, 6)
 )
 
 install.packages("readxl")
