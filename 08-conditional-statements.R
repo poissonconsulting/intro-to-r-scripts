@@ -1,44 +1,44 @@
-# two is assigned to x
-x <- 2
+number_test <- 10
 
-if (x == 2) { # if statement: is x equal to 2
-  print("answer is true") # if the statement is true this will print
-} else {
-  print("answer is false") # if the statement is not true this will print
+if (number_test > 3) {
+  "The number is greater then 3"
 }
 
-if (x == 3) {
-  print("x is equal to 3")
-} else if (x == 2) {
-  print("x is equal to 2")
-} else {
-  print("x is not equal to 2 or 3")
+number_test <- 1
+
+if (number_test > 3) {
+  "The number is greater then 3"
 }
 
-# Let's replace x with 3 now and rerun the condition statement. 
-# What is printed in the console?
-x <- 3
+number_test <- 1
 
-if (x == 3) {
-  print("x is equal to 3")
-} else if (x == 2) {
-  print("x is equal to 2")
+if (number_test > 3) {
+  "The number is greater then 3"
 } else {
-  print("x is not equal to 2 or 3")
+  "The number is less then 3"
 }
 
-# Now replace x with 4. What is printed in the console?
-x <- 4
+number_test <- 1
 
-if (x == 3) {
-  print("x is equal to 3")
-} else if (x == 2) {
-  print("x is equal to 2")
+if (number_test > 3) {
+  "The number is greater then 3"
+} else if (number_test > 0) {
+  "The number is greater then 0"
 } else {
-  print("x is not equal to 2 or 3")
+  "The number must be negative"
 }
 
- # Can you replace the XXXX with the proper values of if, else or else if?
+ number_test <- -3
+ 
+ if (number_test > 3) {
+   "The number is greater then 3"
+ } else if (number_test > 0) {
+   "The number is greater then 0"
+ } else {
+   "The number must be negative"
+ }
+
+ # Replace the XXXX with the values of if, else or else if?
  duck <- "green winged teal"
  
  XXXX (duck == "mallard") {
@@ -46,17 +46,20 @@ if (x == 3) {
  } XXXX (duck == "northern pintail") {
    print("The duck is a northern pintail")
  } XXXX {
-   print("Not sure what the duck is")
+   print("Not sure what species the duck is")
  }
 
  # Will both names be created?
  survey_person <- c("Ayla")
  
- if (survey_person == "Ayla") paste(survey_person, "Pearson")
- if (survey_person == "Joe") paste(survey_person, "Thorely")
+ if (survey_person == "Ayla") "Ayla Pearson"
+ if (survey_person == "Joe")  "Joe Thorley"
 
 # Change survey_person to Joe and rerun the statements. Which name prints now?
 survey_person <- c("Joe")
+
+if (survey_person == "Ayla") "Ayla Pearson"
+if (survey_person == "Joe")  "Joe Thorley"
 
  # What will y be after passing through the conditional statement?
  x <- 100
@@ -68,7 +71,7 @@ survey_person <- c("Joe")
    y <- x
  }
  
- print(y)
+ y
 
 val <- 1
 
@@ -82,55 +85,52 @@ if (val >= 10) { # if value val is greater than or equal to 10
   new_val <- val + 6
 }
 
-print(new_val)
+new_val
 
 # Try running the conditional with various values from 0 to 10 and see what values you get out. 
 val <- 4
 
+if (val >= 10) { 
+  new_val <- val
+} else if (val >= 1 & val <= 2) { 
+  new_val <- val + 10
+} else if (val >= 3 & val <= 5) { 
+  new_val <- val + 8
+} else { 
+  new_val <- val + 6
+}
+
+new_val
+
 val <- 6
+
+if (val >= 10) { 
+  new_val <- val
+} else if (val >= 1 & val <= 2) { 
+  new_val <- val + 10
+} else if (val >= 3 & val <= 5) { 
+  new_val <- val + 8
+} else { 
+  new_val <- val + 6
+}
+
+new_val
 
 val <- 9
 
-creatureA <- list(
-  name = c("megalosaurus"),
-  group = c("dinosaur"),
-  real = c("yes"),
-  food = c("meat")
-)
-
-test_subject <- creatureA
-
-if (test_subject$group == "dinosaur") {
-  print("yes, I am a dinosaur")
-  if (test_subject$real == "yes") {
-    print("I am a real dinosaur not a tv dinosaur")
-      if (test_subject$food == "meat") {
-         print("I eat meat") 
-      }
-  }
+if (val >= 10) { 
+  new_val <- val
+} else if (val >= 1 & val <= 2) { 
+  new_val <- val + 10
+} else if (val >= 3 & val <= 5) { 
+  new_val <- val + 8
+} else { 
+  new_val <- val + 6
 }
 
- # What output do you get when you try with creature B?
- creatureB <- list(
-   name = c("indoraptor"),
-   group = c("dinosaur"),
-   real = c("no"),
-   food = c("meat")
- )
- 
- test_subject <- creatureB
+new_val
 
- # What output do you get when you try with creature C?
- creatureC <- list(
-   name = c("woolly mammoth"),
-   group = c("mammal"),
-   real = c("yes"),
-   food = c("plants")
- )
- 
- test_subject <- creatureC
-
- # What is the output?
+ # Question 1: What is the output?
  if (TRUE) {
    2 + 2
  }
@@ -139,7 +139,7 @@ if (test_subject$group == "dinosaur") {
    2 + 2
  }
 
- # What is the output?
+ # Question 2: What is the output?
  if (TRUE) {
    2 + 2
  } else {
@@ -152,7 +152,7 @@ if (test_subject$group == "dinosaur") {
    5
  }
 
- # What is the output?
+ # Question 3: What is the output?
  if (TRUE) {
    2 + 2
  } else if (TRUE) {
@@ -169,7 +169,7 @@ if (test_subject$group == "dinosaur") {
    5
  }
 
- # What is the output?
+ # Question 4: What is the output?
  site_name <- "Upper River"
  distance <- 100
  
@@ -185,4 +185,3 @@ if (test_subject$group == "dinosaur") {
  
  # What happens if you run it again with site_name <- "Lower River"?
  site_name <- "Lower River"
- distance_adjusted
