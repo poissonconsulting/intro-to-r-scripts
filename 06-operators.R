@@ -70,7 +70,7 @@ plant_parts <- c("shoot", "root", "leaf", "stem")
 
 (1 + 3) * 2^4 
 
-#What does `1 + 3 * 2^4` evaluate to?
+# What does `1 + 3 * 2^4` evaluate to?
 1 + 3 * 2^4
 
 # Less than

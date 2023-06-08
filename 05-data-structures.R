@@ -220,7 +220,7 @@ dim(x)
  # Add more salmon species to this list.
  species_common_names <- list(
    Oncorhynchus_tshawytscha = c("spring salmon", "chinook salmon", "tyee", "king salmon", "chrome hog"),
-   Oncorhynchus_kisutch = ("coho salmon", "silvers")
+   Oncorhynchus_kisutch = c("coho salmon", "silvers")
  )
  
  species_common_names

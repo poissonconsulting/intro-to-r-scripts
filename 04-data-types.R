@@ -1,8 +1,8 @@
 'Helloworld'
 "Helloworld"
 
- # What would happen if you used single quotes to write out `"This code is run on Ayla's computer"`?
- 
+ # What would happen if you used single quotes to write out "This code is run on Ayla's computer"?
+ 'This code is run on Ayla's computer'
 
 TRUE
 FALSE

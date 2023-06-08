@@ -51,37 +51,7 @@ head(iris)
  
 
  # Question 2: Read in the 2019 sheet in the excel file `visit.xlsx`.
- # Save the table as an rds file.
- # Then read in the rds file.
- 
- 
- visit_20 <- read_excel(
-   path = "example/yakoun-population/data/visit.xlsx",
-   sheet = "visit_20"
- )
- # Do the 2021 one yourself.
- 
- 
- 
- # Save each table as an rds file.
- 
- saveRDS(
-   visit_20,
-   "example/yakoun-population/output/testing/visit_20.RDS"
- )
- # Do the 2021 one yourself.
- 
- 
- 
- # Read rds files in.
- 
- 
- visit_2020 <- readRDS(
-   "example/yakoun-population/output/testing/visit_20.RDS"
- )
- # Do the 2021 one yourself.
- 
- 
+ # Save the table as an rds file. Then read in the rds file.
  
 
  # Question 3: Read in the 2020 sheet in the excel file `visit.xlsx`.
