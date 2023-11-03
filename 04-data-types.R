@@ -48,6 +48,7 @@ c(TRUE, TRUE, FALSE, TRUE)
 # Write out from 1 to 5.
 c()
 
+# We say we are assigning the value "Ayla" to the variable called first_name
 first_name <- "Ayla"
 first_name
 
@@ -70,19 +71,19 @@ NULL
 c(1, NULL, 3, 4, 5, 6)
 
 # create a sequence of numbers from 1 to 5
-c(1, 2, 3, 4, 5)
+nums_1_to_5 <- c(1, 2, 3, 4, 5)
 # check the type
-typeof(c(1, 2, 3, 4, 5))
+typeof(nums_1_to_5)
 
 # convert the doubles to integers with as.integer()
-as.integer(c(1, 2, 3, 4, 5))
+ints_1_to_5 <- as.integer(nums_1_to_5)
 # now check the type
-typeof(as.integer(c(1, 2, 3, 4, 5)))
+typeof(ints_1_to_5)
 
 as.character(c(1, 5, 14, 2000000))
 as.integer(c("1", "one", "hippo", "4.2"))
 
- # Question 1: Double or integer?
+ # Question 1: Is the output a double or integer?
  2
  2.0
  2.1

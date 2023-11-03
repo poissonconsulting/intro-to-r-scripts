@@ -27,8 +27,7 @@ add_vectors(
 # Which sections were helpful? Which sections are confusing?
 ?sum()
 
-# install.packages("readxl")
-
+#install.packages("readxl")
 library(readxl)
 
 

@@ -11,6 +11,12 @@ typeof(c(1.2, 1L))
 6 
 c(6)
 
+vector_first <- c(7, 14, 12)
+vector_second <- c(45, 52, 68)
+
+new_vector <- c(vector_first, vector_second)
+new_vector
+
 length(c("apple", "pear", "kiwi"))
 
 # How long is the vector c(3L, 0L, 4L, 2L, 5L, 200L)?
@@ -89,10 +95,10 @@ tree_measurements$species
 
 
 sitka_counts <- data.frame(
-  year = c(2020L, 2021L, 2022L),
-  female = c(30, 47, 61.5),
-  male = c(40, 51, 42),
-  comment = c("cold winter", NA_character_, "helicopter issues")
+  year = c(2020L, 2021L, 2022L, 2023L),
+  female = c(30, 47, 62, 30),
+  male = c(40, 51, 42, 45),
+  comment = c("cold winter", NA_character_, "helicopter issues", NA_character_)
 )
 sitka_counts
 
@@ -111,6 +117,24 @@ sitka_counts[,1]
 
 # What value will `sitka_counts[2, 3]` return?
 sitka_counts[2, 3]
+
+sitka_counts[sitka_counts$year == 2020, ]
+
+# Can you filter the data frame to give the rows for 2020 and 2021?
+
+
+sitka_counts[sitka_counts$year == 2023 & sitka_counts$female == 30, ]
+
+sitka_counts$male[sitka_counts$year == 2023 & sitka_counts$female == 30]
+
+sitka_counts$calf <- c(10, 15, 16, 8) 
+sitka_counts
+
+# Add a new column to the `sitka_counts` data frame called adults that is the sum of the male and female columns. 
+
+
+sitka_counts$comment <- NULL
+sitka_counts
 
  tbl1 <-
    data.frame(
@@ -140,6 +164,12 @@ hg_mammal_by_bodysize
 
 as.integer(hg_mammal_factor)
 as.integer(hg_mammal_by_bodysize)
+
+hg_mammal_weight_g <- c(907, 300, 2000, 150)
+
+plot(hg_mammal_weight_g ~ hg_mammal_factor)
+
+plot(hg_mammal_weight_g ~ hg_mammal_by_bodysize)
 
 x <- matrix(
   c(1, 2, 3, 4, 5, 6),
@@ -297,6 +327,7 @@ dim(x)
  contact_info
 
  # Question 13: Create a data frame that contains dates and water temperatures for 5 days.
+ # Then add another column to the data frame for the salinity values.
  
 
  # Question 14: Set the factor levels to order the locations from west to east.

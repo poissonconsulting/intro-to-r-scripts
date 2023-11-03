@@ -71,14 +71,18 @@ for (i in data) {
  # Example 2
  numbers_check <- c(10, 72, 42357, -14, 36, 91)
  
+ # create a empty vector outside the loop to store the values
+ values_over_50 <- c()
+ 
+ # go through the loop
  for (i in numbers_check) {
-   print("number being checked")
-   print(i)
-   check <- i >= 50
-   print("Is the number greater than or equal to 50?")
-   print(check)
-   print("---------------------------------------------")
+   if (i >= 50) {
+     # only saves values that meet our criteria
+     values_over_50 <- c(values_over_50, i)
+   }
  }
+ 
+ values_over_50
 
  # Question 1: This for loop prints out the first names in the list names.
  # Change the for loop so it prints the last names that were recorded.
@@ -100,6 +104,6 @@ for (i in data) {
  }
 
  # Question 3
- # Write a for loop that loops through a vector and only prints values that are greater than 100.
+ # Write a for loop that loops through a vector and saves values that are greater than 100.
  test_greater_100 <- c(1, 100, 150, 47, 52, 200)
  

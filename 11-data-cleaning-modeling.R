@@ -144,6 +144,6 @@ runif(1)
  head(beaver2)
  
 
- # Question 2: Set up a linear model to understand the relationship between height and diameter of black cherry tress in the  `trees` data set.
+ # Question 2: Set up a linear model to understand the relationship between height and diameter of black cherry trees in the  `trees` data set.
  head(trees)
  

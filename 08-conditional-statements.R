@@ -65,7 +65,7 @@ if (survey_person == "Joe")  "Joe Thorley"
  x <- 100
  
  if (x > 50) {
-   y <- x/2
+   y <- x / 2
    y <- y + 5
  } else {
    y <- x

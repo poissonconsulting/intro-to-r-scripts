@@ -22,6 +22,9 @@ data
    sheet = "visit_19"
  )
 
+# The visit.xlsx file has 3 sheets of data can you read in the data for 2020?
+
+
 head(iris)
 
  write.csv(

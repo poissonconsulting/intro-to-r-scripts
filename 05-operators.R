@@ -32,12 +32,6 @@ plant_parts <- c("shoot", "root", "leaf", "stem")
 # How many decimal places does R display? What happens to the number `2.333333334353463984821113` when you print it to screen?
 2.333333334353463984821113
 
- sitka_counts <- data.frame(
-   year = c(2020, 2021, 2022),
-   female = c(30, 47, 61),
-   male = c(40, 51, 42)
- )
-
 # Addition
 2 + 3
 10 + 5 
@@ -73,6 +67,10 @@ plant_parts <- c("shoot", "root", "leaf", "stem")
 # What does `1 + 3 * 2^4` evaluate to?
 1 + 3 * 2^4
 
+# Write out the Hatter and Bergerud recruitment-mortality equation to estimate the growth rate. 
+# M and R should be variables and save the output to a variable named `lambda_1`. 
+
+
 # Less than
 2 < 3
 10 < 5
@@ -99,6 +97,18 @@ plant_parts <- c("shoot", "root", "leaf", "stem")
 2 != 3
 10 != 10
 
+ # Let's check the growth rate for a different population and compare it to our first population.
+ # Try a different mortality and recruitment value and save the output to `lambda_2`.
+ # Test if `lambda_2` is greater then or equal to `lambda`.
+ 
+ M <- 0.2
+ R <- 0.5
+ 
+ lambda_2 <- (1 - M) / (1 - R)
+ lambda_2
+ 
+ lambda_2 >= lambda_1
+
 # Value match in set
 2 %in% c(2, 3, 4)
 5 %in% c(2, 3, 4)
@@ -123,12 +133,24 @@ c(TRUE, TRUE, FALSE) & c(FALSE, TRUE, FALSE)
 # Or (vectorized/element wise)
 c(TRUE, TRUE) | c(FALSE, TRUE)
 
+ # Lets now compare if our `lambda_2` is greater then or equal to `lambda_1` and `lambda_2` is greater then 1.
+ 
+
+# sequence from 1 to 5
+1:5
+
+# How would you create a sequence of numbers from 50 to 100?
+
+
 vals <- c(2.1, 4.3, 5.3, 7.1, 9.4)
 
 log(vals)
 exp(vals)
 mean(vals)
 sd(vals)
+
+# How would you calculate the median for vals? Can you find the function?
+
 
  # Question 1: What happens to the variable `first_name`?
  # What value does it have in the start and the end?
@@ -241,7 +263,10 @@ sd(vals)
  
  7 < 5 || 10 > 20
 
- # Question 7: What is the result?
+ # Question 7: Create a sequence of numbers from 1 to 100 and another sequence from 25 to 200.
+ 
+
+ # Question 8: What is the result?
  log(1)
  
  log(0)
@@ -258,13 +283,14 @@ sd(vals)
  
  exp(1000)
 
+ # Question 9: What is the result?
  measured_value <- c(1, 1, 3, 5, 7, 3, 5, 4)
  measured_value
  mean(measured_value)
  sd(measured_value)
  median(measured_value)
 
- # Question 9: What is the result?
+ # Question 10: What is the result?
  measured_value_2 <- c(1, 1, 3, 5, 7, 3, 5, 4, NA)
  measured_value_2
  mean(measured_value_2)
@@ -275,7 +301,7 @@ sd(vals)
  sd(measured_value_2, na.rm = TRUE)
  median(measured_value_2, na.rm = TRUE)
 
- # Question 10: Write your own expressions.
+ # Question 11: Write your own expressions.
  # Write out two hundred plus fifty.
  
  # Write out one hundred fifty multiplied by forty two.
@@ -287,5 +313,5 @@ sd(vals)
  # Is eight not equal to seven?
  
 
- # Question 11: Create a vector of numbers, save it to a variable and then calculate the mean.
+ # Question 12: Create a vector of numbers, save it to a variable and then calculate the mean.
  
