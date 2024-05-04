@@ -1,5 +1,3 @@
-
-
 # create vector berries
 berries <- c("thimble", "salmon", "salal")
 # step through each value in berries with the for loop
@@ -44,66 +42,66 @@ for (i in data) {
   print("-----------")
 }
 
- # Are both options A and B valid ways of writing a for loop?
- 
- # Option A
- for (fruit in berries) {
-   print(fruit)
- }
- 
- # Option B
- for (item in berries) {
-   print(item)
- }
+# Are both options A and B valid ways of writing a for loop?
 
- # Example 1
- numbers <- c(0.5, 0.25, 0.75, 0.33)
- 
- for (i in numbers) {
-   print("Our number is:")
-   print(i)
-   doubled_number <- i * 2
-   print("when doubled, it becomes")
-   print(doubled_number)
-   print("------------------------")
- }
+# Option A
+for (fruit in berries) {
+  print(fruit)
+}
 
- # Example 2
- numbers_check <- c(10, 72, 42357, -14, 36, 91)
- 
- # create a empty vector outside the loop to store the values
- values_over_50 <- c()
- 
- # go through the loop
- for (i in numbers_check) {
-   if (i >= 50) {
-     # only saves values that meet our criteria
-     values_over_50 <- c(values_over_50, i)
-   }
- }
- 
- values_over_50
+# Option B
+for (item in berries) {
+  print(item)
+}
 
- # Question 1: This for loop prints out the first names in the list names.
- # Change the for loop so it prints the last names that were recorded.
- names <- list(
-   first = c("Ayla", "Bev", "Bron", "Kelly", "Alan"),
-   last = c("Pearson", "Pearson", "Cowpar")
- )
- 
- for (name in names$first) {
-   print(name)
- }
+# Example 1
+numbers <- c(0.5, 0.25, 0.75, 0.33)
 
- # Question 2: Loop through the vector of values and add 2 to each value and output the result.
- vector_values <- c(2, 4, -1, -7, 3, 10, -2)
- 
- # write the body of the for loop
- for (i in vector_values) {
- 
- }
+for (i in numbers) {
+  print("Our number is:")
+  print(i)
+  doubled_number <- i * 2
+  print("when doubled, it becomes")
+  print(doubled_number)
+  print("------------------------")
+}
 
- # Question 3
- # Write a for loop that loops through a vector and saves values that are greater than 100.
- test_greater_100 <- c(1, 100, 150, 47, 52, 200)
- 
+# Example 2
+numbers_check <- c(10, 72, 42357, -14, 36, 91)
+
+# create a empty vector outside the loop to store the values
+values_over_50 <- c()
+
+# go through the loop
+for (i in numbers_check) {
+  if (i >= 50) {
+    # only saves values that meet our criteria
+    values_over_50 <- c(values_over_50, i)
+  }
+}
+
+values_over_50
+
+# Question 1: This for loop prints out the first names in the list names.
+# Change the for loop so it prints the last names that were recorded.
+names <- list(
+  first = c("Ayla", "Bev", "Bron", "Kelly", "Alan"),
+  last = c("Pearson", "Pearson", "Cowpar")
+)
+
+for (name in names$first) {
+  print(name)
+}
+
+# Question 2: Loop through the vector of values and add 2 to each value and output the result.
+vector_values <- c(2, 4, -1, -7, 3, 10, -2)
+
+# write the body of the for loop
+for (i in vector_values) {
+
+}
+
+# Question 3
+# Write a for loop that loops through a vector and saves values that are greater than 100.
+test_greater_100 <- c(1, 100, 150, 47, 52, 200)
+

@@ -38,7 +38,7 @@ str(data)
 
 
 
- View(data)
+View(data)
 
 hist(data$ForkLength_mm, 6)
 
@@ -138,12 +138,12 @@ runif(1)
 runif(1) 
 runif(1) 
 
- # Question 1: Perform a t-test for the beavers data set.
- # Can you access the confidence interval, test statistic and p-value?
- head(beaver1)
- head(beaver2)
- 
+# Question 1: Perform a t-test for the beavers data set.
+# Can you access the confidence interval, test statistic and p-value?
+head(beaver1)
+head(beaver2)
 
- # Question 2: Set up a linear model to understand the relationship between height and diameter of black cherry trees in the  `trees` data set.
- head(trees)
- 
+
+# Question 2: Set up a linear model to understand the relationship between height and diameter of black cherry trees in the  `trees` data set.
+head(trees)
+
