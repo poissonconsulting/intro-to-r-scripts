@@ -2,7 +2,7 @@
 "Helloworld"
 
 # What would happen if you used single quotes to write out "This code is run on Ayla's computer"?
-# Remove the comment in line 6 and try running the code
+# Remove the comment for line 6 and try running the code
 # 'This code is run on Ayla's computer'
 
 TRUE
@@ -11,7 +11,7 @@ FALSE
 1 < 2
 
 # What is the result of `2 < 1`?
-2 < 1
+
 
 1.2
 10.5
@@ -34,10 +34,10 @@ typeof(10L)
 typeof(52L)
 
 # What does `typeof(1)` return?
-typeof(1)
+
 
 # What does `typeof(1L)` return?
-typeof(1L)
+
 
 # single value
 1
@@ -47,7 +47,7 @@ c("bear", "eagle", "martin")
 c(TRUE, TRUE, FALSE, TRUE)
 
 # Write out from 1 to 5.
-c()
+
 
 # We say we are assigning the value "Ayla" to the variable called first_name
 first_name <- "Ayla"
@@ -60,13 +60,12 @@ numbers_1_to_10 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 numbers_1_to_10
 
 # Save your last name as a value and then print the output.
-last_name <- "Pearson"
-last_name
+
 
 c(1, NA_real_, 3, 4, 5, 6)
 
 # Which NA value would you use in this case `c(1L, NA_?, 3L)`?
-c(1L, NA_, 3L)
+
 
 NULL
 c(1, NULL, 3, 4, 5, 6)

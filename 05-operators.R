@@ -20,17 +20,9 @@ plant_parts
 
 # Try creating a couple good and bad variable names and see what happens.
 
-# good names
-x_1 <- c(1, 2, 3, 4)
-data_collected_on_tuesday <- c(1.1, 2.2, 3.3, 4.4)
-
-# bad names
-# remove the comment to run them
-# 1_x <- c(1, 2, 3, 4)
-# data collected on tuesday <- c(1.1, 2.2, 3.3, 4.4)
 
 # How many decimal places does R display? What happens to the number `2.333333334353463984821113` when you print it to screen?
-2.333333334353463984821113
+
 
 # Addition
 2 + 3
@@ -65,10 +57,10 @@ data_collected_on_tuesday <- c(1.1, 2.2, 3.3, 4.4)
 (1 + 3) * 2^4 
 
 # What does `1 + 3 * 2^4` evaluate to?
-1 + 3 * 2^4
+
 
 # Write out the Hatter and Bergerud recruitment-mortality equation to estimate the growth rate. 
-# M and R should be variables and save the output to a variable named `lambda_1`. 
+# M_1 and R_1 should be variables and save the output to a variable named `lambda_1`. 
 
 
 # Less than
@@ -99,22 +91,15 @@ data_collected_on_tuesday <- c(1.1, 2.2, 3.3, 4.4)
 
 # Let's check the growth rate for a different population and compare it to our first population.
 # Try a different mortality and recruitment value and save the output to `lambda_2`.
-# Test if `lambda_2` is greater than or equal to `lambda`.
+# Test if `lambda_2` is greater than or equal to `lambda_1`.
 
-M <- 0.2
-R <- 0.5
-
-lambda_2 <- (1 - M) / (1 - R)
-lambda_2
-
-lambda_2 >= lambda_1
 
 # Value match in set
 2 %in% c(2, 3, 4)
 5 %in% c(2, 3, 4)
 
 # What do you get when you run `2 %in% c(3, 4)`?
-2 %in% c(3, 4)
+
 
 # Not 
 !c(TRUE, FALSE, FALSE)

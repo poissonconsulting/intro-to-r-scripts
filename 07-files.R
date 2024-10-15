@@ -1,3 +1,4 @@
+
 getwd()
 
 data <- 
@@ -17,6 +18,7 @@ read_excel(
 )
 
 # The visit.xlsx file has 3 sheets of data can you read in the data for 2020?
+
 
 head(iris)
 
@@ -39,7 +41,7 @@ saveRDS(
 )
 
 # read in the list
-fish_codes <- readRDS(
+fish_codes_from_rds <- readRDS(
   "example/yakoun-population/output/testing/fish_codes.RDS"
 )
 

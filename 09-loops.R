@@ -1,3 +1,16 @@
+# vectorization
+vec_a <- c(1, 3, 5)
+vec_a + 2
+
+# loop notation
+output <- c()
+for (i in vec_a) {
+  output <- c(output, i + 2)
+}
+output
+
+
+
 # create vector berries
 berries <- c("thimble", "salmon", "salal")
 # step through each value in berries with the for loop
@@ -81,6 +94,42 @@ for (i in numbers_check) {
 }
 
 values_over_50
+
+head(beaver1)
+head(beaver2)
+
+data_list <- list(beaver1, beaver2)
+
+for (i in seq_along(data_list)) {
+  print(summary(data_list[[i]]))
+}
+
+# rolling a six sided dice 10 times
+n_simulations <- 10
+dice <- 1:6
+
+rolls <- c()
+for (i in 1:n_simulations) {
+  roll <- sample(dice, 1)
+  rolls <- c(rolls, roll)
+}
+rolls
+
+data_list <- list(beaver1, beaver2)
+
+for (i in seq_along(data_list)) {
+  # create dynamic file name
+  file_name <- paste0("histogram_plot_", i, ".png")
+  # open device
+  png(file_name, width = 700, height = 500)
+  # create plot
+  hist(
+    data_list[[i]]$temp,
+    xlab = "Temperature",
+  )
+  # close device
+  dev.off()
+}
 
 # Question 1: This for loop prints out the first names in the list names.
 # Change the for loop so it prints the last names that were recorded.
