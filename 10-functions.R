@@ -5,10 +5,8 @@ add_vectors <- function(x, y = c(2, 3)) {
   z
 }
 
-try({
 # run function with no arguments supplied
 add_vectors()
-})
 
 add_vectors(
   x = c(2, 4)
