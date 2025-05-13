@@ -42,9 +42,6 @@ View(data)
 
 hist(data$ForkLength_mm, 6)
 
-# What happens to the plot when you increase the number of bins to 20?
-
-
 # Can you plot a histogram for the weight?
 
 data$LogForkLength <- log(data$ForkLength_mm)
@@ -93,9 +90,6 @@ mean(guide_ap)
 guide_jt <- data$ForkLength_mm[data$Guide == "JT"]
 mean(guide_jt)
 
-# Can you get the median value for both guides?
-
-
 # a unpaired t-test with a 95% confidence interval
 guide_test <- 
   t.test(
@@ -121,22 +115,6 @@ if (guide_test$p.value < 0.05) {
 
 # What other information can you get out of the `guide_test` list?
 
-
-# You will get a different numbers when you run this on your machine
-runif(1)
-runif(1)
-runif(1)
-
-# We should all get the same number this time
-set.seed(101)
-runif(1)
-runif(1)
-runif(1)
-
-set.seed(2547)
-runif(1) 
-runif(1) 
-runif(1) 
 
 # Question 1: Perform a t-test for the beavers data set.
 # Can you access the confidence interval, test statistic and p-value?

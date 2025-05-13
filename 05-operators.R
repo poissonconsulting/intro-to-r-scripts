@@ -1,28 +1,14 @@
-# this will print in the console but no object will be saved in the Environment
-c("this will not save") 
-
-# x is saved under Values
-x <- c("this will save")
-
-
-
-x
-x <- c(1, 2, 3, 4)
-x
-
-# lower case species
-plant_parts <- c("shoot", "root", "leaf", "stem")
-
-# What happens if you try to print `Plant_Parts`?
-Plant_Parts
-plant_Parts
-plant_parts
-
-# Try creating a couple good and bad variable names and see what happens.
-
-
 # How many decimal places does R display? What happens to the number `2.333333334353463984821113` when you print it to screen?
 
+
+# Do these calculations give the same output?
+# Example 1
+growth_rate <- log(2) / 20.5
+growth_rate
+1000 * exp(growth_rate * 180)
+
+# Example 2
+1000 * exp(0.03381206 * 180)
 
 # Addition
 2 + 3
@@ -94,6 +80,7 @@ plant_parts
 # Test if `lambda_2` is greater than or equal to `lambda_1`.
 
 
+
 # Value match in set
 2 %in% c(2, 3, 4)
 5 %in% c(2, 3, 4)
@@ -120,7 +107,7 @@ c(TRUE, TRUE) | c(FALSE, TRUE)
 
 # Let's now check if our `lambda_2` is greater than or equal to `lambda_1` and
 # `lambda_2` is greater than 1.
-
+# 
 
 # sequence from 1 to 5
 1:5
@@ -252,6 +239,7 @@ result_c
 # Question 7: Create a sequence of numbers from 1 to 100 and another sequence from 25 to 200.
 
 
+
 # Question 8: What is the result?
 log(1)
 
@@ -290,14 +278,18 @@ median(measured_value_2, na.rm = TRUE)
 # Question 11: Write your own expressions.
 # Write out two hundred plus fifty.
 
+ 
 # Write out one hundred fifty multiplied by forty two.
 
+ 
 # Is seven equal to ten?
 
+ 
 # Is four greater than twenty?
 
+ 
 # Is eight not equal to seven?
-
+ 
 
 # Question 12: Create a vector of numbers, save it to a variable and then calculate the mean.
 

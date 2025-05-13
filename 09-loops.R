@@ -20,6 +20,17 @@ for (i in berries) {
 
 
 
+# Are both options A and B valid ways of writing a for loop?
+# Option A
+for (fruit in berries) {
+  print(fruit)
+}
+
+# Option B
+for (item in berries) {
+  print(item)
+}
+
 # create vector with 3 random numbers between 1 and 500
 greater_than_100 <- c(99, 2, 400)
 
@@ -32,77 +43,30 @@ for (number in greater_than_100) {
   }
 }
 
-data <- data.frame(
-  id = c("A", "B", "C"),
-  group = c(10, 20, 30)
+data_2023 <- data.frame(
+  site = c("A", "B", "C"),
+  rainfall = c(101, 42, 84)
 )
 
-1:nrow(data)
+data_2024 <- data.frame(
+  site = c("A", "B", "C"),
+  rainfall = c(10, 60, 30)
+)
 
-# access the value in the data frame based on the position
-for (i in 1:nrow(data)) {
-  print(i)
-  print(data$id[i])
-  print(data$group[i] + 2)
-  print("-----------")
+data_2025 <- data.frame(
+  site = c("A", "B", "C"),
+  rainfall = c(80, 66, 72)
+)
+
+survey_results <- list(data_2023, data_2024, data_2025)
+
+mean_rainfall <- c()
+for (df in survey_results) {
+  calc <- mean(df$rainfall)
+  mean_rainfall <- c(mean_rainfall, calc)
 }
 
-# What happens if we did not use the position and tried to put the data frame as the object being looped through?
-for (i in data) {
-  print(i)
-  print(data$id[i])
-  print(data$group[i] + 2)
-  print("-----------")
-}
-
-# Are both options A and B valid ways of writing a for loop?
-
-# Option A
-for (fruit in berries) {
-  print(fruit)
-}
-
-# Option B
-for (item in berries) {
-  print(item)
-}
-
-# Example 1
-numbers <- c(0.5, 0.25, 0.75, 0.33)
-
-for (i in numbers) {
-  print("Our number is:")
-  print(i)
-  doubled_number <- i * 2
-  print("when doubled, it becomes")
-  print(doubled_number)
-  print("------------------------")
-}
-
-# Example 2
-numbers_check <- c(10, 72, 42357, -14, 36, 91)
-
-# create a empty vector outside the loop to store the values
-values_over_50 <- c()
-
-# go through the loop
-for (i in numbers_check) {
-  if (i >= 50) {
-    # only saves values that meet our criteria
-    values_over_50 <- c(values_over_50, i)
-  }
-}
-
-values_over_50
-
-head(beaver1)
-head(beaver2)
-
-data_list <- list(beaver1, beaver2)
-
-for (i in seq_along(data_list)) {
-  print(summary(data_list[[i]]))
-}
+mean_rainfall
 
 # rolling a six sided dice 10 times
 n_simulations <- 10
@@ -131,6 +95,34 @@ for (i in seq_along(data_list)) {
   dev.off()
 }
 
+# Write a for loop that loops through the four data frames and does a linear regression on the log length vs log
+# weight and saves the output in a list. Then use another loop to print out the intercept for each model.
+# The function for linear regression is lm() and uses the notation of lm(y ~ x) to represent the model being fit.
+
+data_2022 <- data.frame(
+  fish_id = c("A", "B", "C"),
+  length = c(92, 47, 80),
+  weight = c(8, 12, 19)
+)
+
+data_2023 <- data.frame(
+  fish_id = c("A", "B", "C"),
+  length = c(101, 42, 84),
+  weight = c(10, 15, 20)
+)
+
+data_2024 <- data.frame(
+  fish_id = c("A", "B", "C"),
+  length = c(102, 45, 90),
+  weight = c(8, 16, 22)
+)
+
+data_2025 <- data.frame(
+  fish_id = c("A", "B", "C"),
+  length = c(110, 50, 95),
+  weight = c(15, 20, 27)
+)
+
 # Question 1: This for loop prints out the first names in the list names.
 # Change the for loop so it prints the last names that were recorded.
 names <- list(
@@ -154,3 +146,21 @@ for (i in vector_values) {
 # Write a for loop that loops through a vector and saves values that are greater than 100.
 test_greater_100 <- c(1, 100, 150, 47, 52, 200)
 
+
+# Question 4
+# Write a for loop that loops through the data frames and does a linear regression on the time vs height and saves the output in a list. Then use another loop to print out the R squared value for each model.
+
+plant_1 <- data.frame(
+  time = c(1, 3, 5),
+  height = c(8, 12, 19)
+)
+
+plant_2 <- data.frame(
+  time = c(1, 3, 5),
+  height = c(10, 18, 20)
+)
+
+plant_3 <- data.frame(
+  time = c(1, 3, 5),
+  height = c(8, 16, 22)
+)

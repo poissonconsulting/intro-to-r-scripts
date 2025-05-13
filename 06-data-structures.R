@@ -6,7 +6,7 @@ c("a", 1L)
 typeof(c("a", 1L))
 
 # What type will the vector `c(1.2, 1L)` be? Double or integer? Which type is less restrictive?
-typeof(c(1.2, 1L))
+
 
 6 
 c(6)
@@ -59,6 +59,15 @@ vec_a + vec_c
 
 
 
+# Which example(s) gives a warning and why? Is recycling used in any of the examples?
+# Example 1
+c(1, 4) + c(1, 2, 3)
+
+# Example 2
+c(1, 4) + c(1, 2, 3, 4)
+
+
+
 sitka_counts <- data.frame(
   year = c(2020L, 2021L, 2022L, 2023L, 2023L),
   site = c("E1", "A1", "Z2", "Z2", "E1"),
@@ -81,8 +90,8 @@ sitka_counts[1,]
 
 sitka_counts[,1]
 
-# What value will `sitka_counts[2, 3]` return?
-sitka_counts[2, 3]
+# Print the value 47 in the female column.
+
 
 sitka_counts[sitka_counts$year == 2023, ]
 
@@ -102,6 +111,7 @@ sitka_counts
 sitka_counts$comment <- NULL
 sitka_counts
 
+# Will both tbl1 and tbl2 be created? If no, explain why.
 tbl1 <-
   data.frame(
     species = c("spruce", "cedar", "cedar"),
@@ -122,6 +132,8 @@ tree_measurements <- list(
 )
 tree_measurements
 
+lm_output <- lm(sitka_counts$male ~ sitka_counts$female)
+
 
 
 # b)
@@ -132,9 +144,6 @@ tree_measurements[[2]]
 
 # d)
 tree_measurements[[2]][1]
-
-# What does `tree_measurements[[2]][2]` return?
-tree_measurements[[2]][2]
 
 tree_measurements[["cedar"]]
 
@@ -204,8 +213,10 @@ is.array(object_3)
 # Question 2: Create a vector of characters with a length of five which includes your favorite months of the year.
 
 
+
 # Question 3: Create a vector of the tide heights for today in feet, an integer vector for the next 5 days and a character vector of your favorite fall activities.
 
+ 
 
 # Question 4: What is the length of each vector?
 vector_1 <- c(14.78, 2.37, 15.78, 2.45)
@@ -274,6 +285,7 @@ contact_info
 # Then add another column to the data frame for the salinity values.
 
 
+
 # Question 10: This list contains species scientific name and corresponding common names.
 # Add more salmon species to this list.
 species_common_names <- list(
@@ -328,7 +340,7 @@ wild_foods <- list(
 location <- c("Vancouver", "Whistler", "Nelson", "Salmon Arm")
 
 # Question 15: How does changing the factor levels change the order of variables on the x-axis?
-
+# 
 # Use the built in data set PlantGrowth
 PlantGrowth
 # Look at the factor levels
@@ -342,6 +354,8 @@ PlantGrowth_NewLevel <- factor(
 )
 # Generate box plot with PlantGrowth_NewLevel, note the order of values on the x-axis
 plot(PlantGrowth$weight ~ PlantGrowth_NewLevel)
+
+
 
 # Question 16: Create a four by four matrix.
 

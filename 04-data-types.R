@@ -2,7 +2,6 @@
 "Helloworld"
 
 # What would happen if you used single quotes to write out "This code is run on Ayla's computer"?
-# Remove the comment for line 6 and try running the code
 # 'This code is run on Ayla's computer'
 
 TRUE
@@ -62,10 +61,25 @@ numbers_1_to_10
 # Save your last name as a value and then print the output.
 
 
+c("a", "b", "c") 
+x <- c("d", "e", "f")
+
+x
+x <- c(1, 2, 3, 4)
+x
+
+# lower case species
+plant_parts <- c("shoot", "root", "leaf", "stem")
+
+# What happens if you try to print `Plant_Parts`?
+# Plant_Parts
+# plant_Parts
+# plant_parts
+
 c(1, NA_real_, 3, 4, 5, 6)
 
 # Which NA value would you use in this case `c(1L, NA_?, 3L)`?
-
+# 
 
 NULL
 c(1, NULL, 3, 4, 5, 6)
@@ -109,17 +123,17 @@ typeof("FALSE")
 typeof(T)
 typeof("F")
 
-# Question 4: Finish writing out a sequence of odd numbers from 1 to 10.
-c(1, 3)
+# Question 4: Write out a sequence of odd numbers from 1 to 10.
+
 
 # Question 5: Write a sequence of 1 to 20 integers.
-c()
+
 
 # Question 6: Fill in the missing value with a red listed species from your area.
 c("Haida Ermine", "Northern Goshawk", NA_character_)
 
 # Question 7: Write out four logical values where two are `TRUE`, one is `FALSE` and one is missing.
-c()
+
 
 # Question 8: Can all values be converted to another type successfully?
 # What happens to the word "Dog" when forced to be an integer?
