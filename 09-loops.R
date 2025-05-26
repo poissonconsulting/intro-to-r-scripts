@@ -21,6 +21,7 @@ for (i in berries) {
 
 
 # Are both options A and B valid ways of writing a for loop?
+
 # Option A
 for (fruit in berries) {
   print(fruit)

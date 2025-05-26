@@ -72,14 +72,14 @@ x
 plant_parts <- c("shoot", "root", "leaf", "stem")
 
 # What happens if you try to print `Plant_Parts`?
-# Plant_Parts
-# plant_Parts
-# plant_parts
+Plant_Parts
+plant_Parts
+plant_parts
 
 c(1, NA_real_, 3, 4, 5, 6)
 
 # Which NA value would you use in this case `c(1L, NA_?, 3L)`?
-# 
+
 
 NULL
 c(1, NULL, 3, 4, 5, 6)

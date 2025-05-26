@@ -39,8 +39,8 @@ if (number_test > 3) {
 }
 
 # Replace the XXXX with the values of if, else or else if?
-# duck <- "green winged teal"
-# 
+duck <- "green winged teal"
+
 # XXXX (duck == "mallard") {
 #   print("The duck is a mallard")
 # } XXXX (duck == "northern pintail") {
@@ -73,9 +73,6 @@ if (x > 50) {
 }
 
 y
-
-
-
 
 val <- 1
 

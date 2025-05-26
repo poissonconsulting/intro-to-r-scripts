@@ -60,12 +60,11 @@ vec_a + vec_c
 
 
 # Which example(s) gives a warning and why? Is recycling used in any of the examples?
-# Example 1
+## Example 1
 c(1, 4) + c(1, 2, 3)
 
-# Example 2
+## Example 2
 c(1, 4) + c(1, 2, 3, 4)
-
 
 
 sitka_counts <- data.frame(
@@ -213,10 +212,8 @@ is.array(object_3)
 # Question 2: Create a vector of characters with a length of five which includes your favorite months of the year.
 
 
-
 # Question 3: Create a vector of the tide heights for today in feet, an integer vector for the next 5 days and a character vector of your favorite fall activities.
 
- 
 
 # Question 4: What is the length of each vector?
 vector_1 <- c(14.78, 2.37, 15.78, 2.45)
@@ -285,7 +282,6 @@ contact_info
 # Then add another column to the data frame for the salinity values.
 
 
-
 # Question 10: This list contains species scientific name and corresponding common names.
 # Add more salmon species to this list.
 species_common_names <- list(
@@ -340,7 +336,7 @@ wild_foods <- list(
 location <- c("Vancouver", "Whistler", "Nelson", "Salmon Arm")
 
 # Question 15: How does changing the factor levels change the order of variables on the x-axis?
-# 
+
 # Use the built in data set PlantGrowth
 PlantGrowth
 # Look at the factor levels
@@ -354,8 +350,6 @@ PlantGrowth_NewLevel <- factor(
 )
 # Generate box plot with PlantGrowth_NewLevel, note the order of values on the x-axis
 plot(PlantGrowth$weight ~ PlantGrowth_NewLevel)
-
-
 
 # Question 16: Create a four by four matrix.
 

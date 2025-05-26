@@ -1,5 +1,6 @@
-
 getwd()
+
+
 
 
 data <- 
@@ -9,9 +10,10 @@ data <-
 data
 
 ?read.csv # or
-help(read.csv)
+# help(read.csv)
 
 # install.packages("readxl")
+
 library(readxl)
 read_excel(
   path = "example/yakoun-population/data/visit.xlsx",
@@ -19,7 +21,6 @@ read_excel(
 )
 
 # The visit.xlsx file has 3 sheets of data can you read in the data for 2020?
-
 
 
 head(iris)
@@ -52,11 +53,11 @@ fish_codes_from_rds <- readRDS(
 
 # Question 2: Read in the 2019 sheet in the excel file `visit.xlsx`.
 # Save the table as an rds file. Then read in the rds file.
- 
+
 
 # Question 3: Read in the 2020 sheet in the excel file `visit.xlsx`.
 # Save the table as a csv file.
- 
+
 
 # Question 4: Read in the 2021 sheet in the excel file `visit.xlsx`.
 # Save the table as an excel file.

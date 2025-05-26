@@ -2,12 +2,12 @@
 
 
 # Do these calculations give the same output?
-# Example 1
+## Example 1
 growth_rate <- log(2) / 20.5
 growth_rate
 1000 * exp(growth_rate * 180)
 
-# Example 2
+## Example 2
 1000 * exp(0.03381206 * 180)
 
 # Addition
@@ -80,7 +80,6 @@ growth_rate
 # Test if `lambda_2` is greater than or equal to `lambda_1`.
 
 
-
 # Value match in set
 2 %in% c(2, 3, 4)
 5 %in% c(2, 3, 4)
@@ -107,7 +106,7 @@ c(TRUE, TRUE) | c(FALSE, TRUE)
 
 # Let's now check if our `lambda_2` is greater than or equal to `lambda_1` and
 # `lambda_2` is greater than 1.
-# 
+
 
 # sequence from 1 to 5
 1:5
@@ -239,7 +238,6 @@ result_c
 # Question 7: Create a sequence of numbers from 1 to 100 and another sequence from 25 to 200.
 
 
-
 # Question 8: What is the result?
 log(1)
 
@@ -270,6 +268,7 @@ measured_value_2
 mean(measured_value_2)
 sd(measured_value_2)
 median(measured_value_2)
+
 # Try adding the `na.rm = TRUE` and see what happens.
 mean(measured_value_2, na.rm = TRUE)
 sd(measured_value_2, na.rm = TRUE)
@@ -278,18 +277,14 @@ median(measured_value_2, na.rm = TRUE)
 # Question 11: Write your own expressions.
 # Write out two hundred plus fifty.
 
- 
 # Write out one hundred fifty multiplied by forty two.
 
- 
 # Is seven equal to ten?
 
- 
 # Is four greater than twenty?
 
- 
 # Is eight not equal to seven?
- 
+
 
 # Question 12: Create a vector of numbers, save it to a variable and then calculate the mean.
 
